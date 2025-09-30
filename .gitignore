@@ -1,2 +1,4 @@
 machine-learning-zoomcamp
 *.csv
+
+.ipynb_checkpoints
