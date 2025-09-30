@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  jupyter:
+    build: .
+    container_name: py-ds-env
+    restart: unless-stopped
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/workspace
+    command: >
+      jupyter lab
+      --ip=0.0.0.0
+      --port=8888
+      --allow-root
+      --no-browser
+      --NotebookApp.token=''
