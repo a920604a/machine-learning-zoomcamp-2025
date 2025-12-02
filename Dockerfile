@@ -22,7 +22,9 @@ RUN pip install --no-cache-dir \
     jupyter \
     torch==2.8.0 \
     torchsummary \
-    torchvision   
+    torchvision \
+    onnx \
+    onnxruntime
 
 # 預設啟動 Jupyter Notebook
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]
