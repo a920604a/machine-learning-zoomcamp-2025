@@ -3,6 +3,7 @@ version: "3.9"
 services:
   jupyter:
     build: .
+    image: machine-learning-zoomcamp-2025
     container_name: py-ds-env
     restart: unless-stopped
     ports:

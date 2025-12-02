@@ -19,7 +19,10 @@ RUN pip install --no-cache-dir \
     scikit-learn \
     matplotlib \
     seaborn \
-    jupyter
+    jupyter \
+    torch==2.8.0 \
+    torchsummary \
+    torchvision   
 
 # 預設啟動 Jupyter Notebook
 CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser"]
